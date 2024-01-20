@@ -1,0 +1,216 @@
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #ffffff;
+    --tertiary-color: #777777;
+  }
+  
+  
+body {
+background-color: #72717f;
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 20px;
+color: var(--secondary-color);
+}
+
+/* Personalizar o título do projeto */
+.title {
+    background-color: #37393A;
+    color: var(--secondary-color);
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: normal;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 90px;
+    margin-bottom: 15px;
+    width: 30%;
+    /* posição */
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Personalizar "Cadastrar Livro" (título) */
+.cadastrar {
+    background-color: #37393A;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+/* Alterar o bloco do menu cadatrar */
+.form-container{
+    background-color: #8b7565;
+    border: 3px solid #37393A;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    width: 300px;
+    height: 390px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+/*Alterar os campos de texto */
+input[type="text"],
+select {
+    text-align: center;
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: #37393A;
+    margin-bottom: 20px;
+}
+
+/* Alterar a caixinha da data */
+input[type="date"] {
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: #37393A;
+    margin-bottom: 20px;
+}
+
+/* Alterar o botão */
+input[type="submit"] {
+    display: block;
+    width: 40%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #37393A;
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin: 0 auto;
+}
+    
+/* Personalizar "Listagem de Livros" */
+.listagem {
+    background-color: #37393A;
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 20%;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+/* Alterar o bloco da listagem */
+.list-container{
+    background-color: #8b7565;
+    border: 3px solid #37393A;
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    align-items: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+/* Personalizar caixinha de "Ordenar por" */
+#sort-by {
+    width: 20%;
+    margin-left: 10px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #37393A;
+    padding: 10px;
+}
+
+/* alterar texto da exibição na listagem dos livro */
+table {
+    background-color: #72717f;
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--secondary-color);
+    text-align: center;
+}
+  
+/* alterar a barra de exibição dos livros (th)*/
+th {
+    background-color: var(--secondary-color);
+    color: #37393A;
+    font-weight: bold;
+}
+  
+tr:nth-child(even) {
+    background-color: #72717f;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.edit-button,
+.delete-button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+  
+.delete-button {
+    background-color: #f44336;
+}
+
+#null{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #72717f;
+    border: 3px solid #37393A;
+    border-radius: 5px;
+    padding: 12px;
+    overflow: auto;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 90px;
+}
